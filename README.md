@@ -8,6 +8,8 @@ create `.env` file with Alchemy or Infura RPC connection URL to be used to setup
 
 Then replace `process.env.ALCHEMY_RPC_URL` in `src/index.js` with your RPC URL variable.
 
-
     npm i
-    node run src/index.js
+    node src/index.js --network=mainnet
+
+
+Under /contract_addresses there must be a corresponding file with contract addresses named after the selected network using the `--network` flag above. e.g., mainnet.js or ropsten.js
