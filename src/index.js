@@ -81,7 +81,7 @@ const queryLogs = async () => {
                 const tokenAmount = log.value / Math.pow(10,18);
                 const txHash = rawLog.transactionHash;
 
-                console.log(`token transfered: ${tokenAmount}, from: ${from}, to: ${to}. tx: ${txHash}`);
+                console.log(`[${(argv.network).toUpperCase()}] NEW VEGA Token Transfer token transfer for amount: ${tokenAmount}, from: ${from}, to: ${to}. tx: ${txHash}`);
                 notifySlack(tokenAmount, from, to, txHash);
             }
         }
