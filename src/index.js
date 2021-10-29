@@ -14,7 +14,7 @@ console.log(`starting ethereum watcher on ${argv.network}`);
 const CONTRACT_ADDR = contractAddresses.VEGA;
 
 
-const web3 = new Web3(new Web3.providers.HttpProvider(process.env[`${(argv.network).toUpperCase()}_INFURA_RPC_URL`].toString()))
+const web3 = new Web3(new Web3.providers.HttpProvider(process.env[`${(argv.network).toUpperCase()}_RPC_URL`].toString()))
 
 const transferAbi = erc20ABI.find(
     (item) => item.type === "event" && item.name === "Transfer"
