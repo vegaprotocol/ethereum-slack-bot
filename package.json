@@ -1,7 +1,7 @@
 {
   "name": "ethereum-slack-bot",
   "version": "1.0.0",
-  "description": "slack bot for vega staking and token",
+  "description": "slack bot for Vega staking and token",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,8 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/vegaprotocol/ethereum-slack-bot.git"
   },
-  "author": "nemitari ajienka @najienka",
-  "license": "ISC",
+  "author": "Vega Protocol",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/vegaprotocol/ethereum-slack-bot/issues"
   },
