@@ -14,7 +14,7 @@ console.log(`starting ethereum watcher on ${argv.network}`);
 const CONTRACT_ADDR = contractAddresses.VEGA;
 
 
-const web3 = new Web3(new Web3.providers.HttpProvider(process.env[`${(argv.network).toUpperCase()}_ALCHEMY_RPC_URL`].toString()))
+const web3 = new Web3(new Web3.providers.HttpProvider(process.env[`${(argv.network).toUpperCase()}_RPC_URL`].toString()))
 
 const transferAbi = erc20ABI.find(
     (item) => item.type === "event" && item.name === "Transfer"
@@ -55,7 +55,7 @@ const notifySlack = (tokenAmount, from, to, txHash) => {
         .catch((err) => console.log(err));
 };
 
-let fromBlock = 13460741;
+let fromBlock = contractAddresses.fromBlock;
 
 const queryLogs = async () => {
     const latestBlock = await web3.eth.getBlock("latest");
