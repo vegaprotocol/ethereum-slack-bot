@@ -55,7 +55,7 @@ const notifySlack = (tokenAmount, from, to, txHash) => {
         .catch((err) => console.log(err));
 };
 
-let fromBlock = 13460741;
+let fromBlock = 13588013;
 
 const queryLogs = async () => {
     const latestBlock = await web3.eth.getBlock("latest");
