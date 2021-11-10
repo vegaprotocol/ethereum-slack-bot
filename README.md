@@ -19,6 +19,6 @@ Then script can be ran as follows:
 network_name can be mainnet or ropsten. e.g., 
     node src/index.js --network=mainnet
 
-Under /contract_addresses there must be a corresponding file with contract addresses named after the selected network using the `--network` flag above. e.g., mainnet.js or ropsten.js
+Under /contract_addresses there must be a corresponding configuration file with contract addresses named after the selected network using the `--network` flag above. e.g., mainnet.js or ropsten.js
 
-Update starting block number `fromBlock` variable in `index.js` prior to launching script.
+Update starting block number `fromBlock` variable in configuration file prior to launching script.
